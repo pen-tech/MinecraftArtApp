@@ -1,3 +1,7 @@
 # マイクラの地上絵を自動で作成するサンプルアプリ
 
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">WPF + OpenCVSharp + Minecraft <a href="https://t.co/fBRZ0oXPWK">pic.twitter.com/fBRZ0oXPWK</a></p>&mdash; たくのろじぃ / Takunology (@takunology_net) <a href="https://twitter.com/takunology_net/status/1489743192702742528?ref_src=twsrc%5Etfw">February 4, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+中に OpenCVSharp_sample と MinecraftArtApp が入っていますが, 前者はマイクラのブロックの平均 Lab 値を求めるために使用したコードが入っています.
+
+アプリは MinecraftArtApp に入っています.
+
+![](image/out.gif)
