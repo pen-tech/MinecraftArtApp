@@ -1,0 +1,29 @@
+﻿<Window x:Class="MinecraftArtApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MinecraftArtApp"
+        mc:Ignorable="d"
+        Title="MinecraftArtApp" Height="450" Width="800" MinHeight="450" MinWidth="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="9*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="5*"/>
+            <ColumnDefinition Width="5*"/>
+        </Grid.ColumnDefinitions>
+
+        <StackPanel Orientation="Vertical" Margin="10" Grid.Row="0">
+            <StackPanel Orientation="Horizontal">
+                <Button Content="画像を読み込む" Width="100" Height="20" Click="GetImgButton" Margin="0 0 10 0"/>
+                <Button Content="画像を変換する" Width="100" Height="20" Name="convertImgButton" Click="ConvertImgButton" Margin="0 0 10 0" IsEnabled="false"/>
+                <Button Content="マイクラへ描画する" Width="100" Height="20" Name="imgToMinecraftButton" Click="ImgToMinecraftButton" Margin="0 0 10 0" IsEnabled="false"/>
+            </StackPanel>
+        </StackPanel>
+        <Image Name="beforeImg" Stretch="Uniform" Width="Auto" Height="Auto" Grid.Row="1" Grid.Column="0" Margin="10"/>
+        <Image Name="afterImg" Stretch="Uniform" Width="Auto" Height="Auto" Grid.Row="1" Grid.Column="1" Margin="10"/>
+    </Grid>
+</Window>
